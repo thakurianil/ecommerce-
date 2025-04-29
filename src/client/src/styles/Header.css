@@ -1,0 +1,29 @@
+/* Ensures the header content stays in one row */
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #f0c14b;
+  }
+  
+  /* Adjust Search Box */
+  .search-box input {
+    border-radius: 20px;
+    padding: 8px 12px;
+  }
+  
+  .search-box button {
+    background-color: #febd69;
+    border-radius: 20px;
+    padding: 6px 15px;
+    margin-left: 10px;
+    border: none;
+  }
+  
+  .search-box button:hover {
+    background-color: #f7a500;
+  }
+  
