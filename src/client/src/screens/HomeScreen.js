@@ -23,18 +23,7 @@ const HomeScreen = () => {
       <Meta />
       <div className="hero-section">
         <Carousel pause='hover' className='bg-dark'>
-          {/* <Carousel.Item>
-            <Image
-              src='/images/banner1.jpg'
-              alt='First slide'
-              fluid
-              className='carousel-image'
-            />
-            <Carousel.Caption className='carousel-caption'>
-              <h2>Welcome to ProShop</h2>
-              <p>Discover amazing products at unbeatable prices</p>
-            </Carousel.Caption>
-          </Carousel.Item> */}
+          
           <Carousel.Item>
             <Image
               src='/images/banner2.jpg'
@@ -42,10 +31,6 @@ const HomeScreen = () => {
               fluid
               className='carousel-image'
             />
-            {/* <Carousel.Caption className='carousel-caption'>
-              <h2>Summer Sale</h2>
-              <p>Up to 50% off on selected items</p>
-            </Carousel.Caption> */}
           </Carousel.Item>
         </Carousel>
       </div>
