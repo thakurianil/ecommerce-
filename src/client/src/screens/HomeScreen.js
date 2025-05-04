@@ -105,16 +105,6 @@ const HomeScreen = () => {
         </Row>
       </div>
 
-      {/* <div className="newsletter-section">
-        <div className="newsletter-content">
-          <h2>Subscribe to Our Newsletter</h2>
-          <p>Get the latest updates on new products and upcoming sales</p>
-          <form className="newsletter-form">
-            <input type="email" placeholder="Enter your email" />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div> */}
     </>
   );
 };
