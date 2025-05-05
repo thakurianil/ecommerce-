@@ -14,14 +14,14 @@ import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 
 const CartScreen = () => {
-  const { id } = useParams();
-  const [searchParams] = useSearchParams();
-  const qty = searchParams.get('qty') ? Number(searchParams.get('qty')) : 1;
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+  // const { id } = useParams();
+  // const [searchParams] = useSearchParams();
+  // const qty = searchParams.get('qty') ? Number(searchParams.get('qty')) : 1;
+  // const navigate = useNavigate();
+  // const dispatch = useDispatch();
 
-  const cart = useSelector((state) => state.cart);
-  const { cartItems } = cart;
+  // const cart = useSelector((state) => state.cart);
+  // const { cartItems } = cart;
 
   useEffect(() => {
     if (id) {
