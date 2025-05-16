@@ -56,7 +56,76 @@ const RegisterScreen = () => {
   };
 
   return (
+    <div className="content-wrapper">
+      <Row className='justify-content-md-center'>
+        <Col xs={12} md={6}>
+          <h1 className="text-center mb-4">Sign Up</h1>
+          {message && <Message variant='danger'>{message}</Message>}
+          {error && <Message variant='danger'>{error}</Message>}
+          {loading && <Loader />}
+          <Form onSubmit={submitHandler}>
+            <Form.Group controlId='name' className="mb-3">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Enter name'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </Form.Group>
 
+            <Form.Group controlId='email' className="mb-3">
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control
+                type='email'
+                placeholder='Enter email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
+
+            <Form.Group controlId='password' className="mb-3">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type='password'
+                placeholder='Enter password'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Group>
+
+            <Form.Group controlId='confirmPassword' className="mb-3">
+              <Form.Label>Confirm Password</Form.Label>
+              <Form.Control
+                type='password'
+                placeholder='Confirm password'
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+            </Form.Group>
+
+            <Button
+              type='submit'
+              variant='primary'
+              size='large'
+              fullWidth
+              className='mt-3'
+            >
+              Register
+            </Button>
+          </Form>
+
+          <Row className='py-3 text-center'>
+            <Col>
+              Already have an account?{' '}
+              <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
+                Sign In
+              </Link>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </div>
   );
 };
 
